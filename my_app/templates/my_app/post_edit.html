@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Добавление записей в Posts</title>
+	</head>
+	<body>
+	<h1>Новая запись в Posts</h1>
+	<form method="POST" class="post-form">
+ 	{% csrf_token %}
+	{{ form.as_p }}
+	<button type="submit">Нажать</button>
+	</form>
+	</body>
+</html>
